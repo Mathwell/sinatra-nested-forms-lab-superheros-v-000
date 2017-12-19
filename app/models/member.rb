@@ -1,4 +1,4 @@
-class Members
+class Member
   attr_reader :name,:power,:bio
 
   MEMBERS=[]

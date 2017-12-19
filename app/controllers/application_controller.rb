@@ -15,7 +15,7 @@ class App < Sinatra::Base
       end
       @members=Member.all
       puts @members
-            
+
       erb:team
     end
 

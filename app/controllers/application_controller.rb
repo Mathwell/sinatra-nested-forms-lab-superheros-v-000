@@ -15,7 +15,7 @@ class App < Sinatra::Base
         Member.new(details)
       end
       @members=Member.all
-      puts "@members"
+      puts @members
 
       erb :super_hero
     end

@@ -9,17 +9,15 @@ class App < Sinatra::Base
     end
 
     post '/teams' do
-      puts params
+
       @team=Team.new(params[:team])
-      puts @team.name
       params[:team][:members].each do |details|
         puts details
         Member.new(details)
       end
       @members=Member.all
-      puts @members
 
-      erb :super_hero
+      erb :team
     end
 
 

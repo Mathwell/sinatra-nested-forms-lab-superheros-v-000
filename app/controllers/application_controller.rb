@@ -13,6 +13,7 @@ class App < Sinatra::Base
       @team=Team.new(params[:team])
       puts @team.name
       params[:team][:members].each do |details|
+        puts details
         Member.new(details)
       end
       @members=Member.all
